@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio | SULFIKAR</title>
+
+  <!-- Fallback Futura PT -> Poppins -->
+  <style>
+    @font-face {
+      font-family: 'Futura PT';
+      src: local('Futura PT'), local('FuturaPT'), local('Futura');
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Boxicons for social icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SULFIKAR</div>
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#home">Beranda</a></li>
+        <li><a class="nav-link" href="#about">About Me</a></li>
+        <li><a class="nav-link" href="#work">Work Result</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bx bx-menu"></i>
+    </button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section home fade-in">
+      <div class="home-inner container">
+        <div class="text-area">
+          <h1 class="hello">Hai, saya <span id="typed-name" class="typed"></span></h1>
+          <p class="short-desc">Mahasiswa aktif Universitas Muhammadiyah Bone, dengan Program Studi Teknologi Pendidikan, Semester 5.</p>
+
+          <!-- Social icons: ganti href ke akunmu -->
+          <div class="social-row" aria-label="Sosial media">
+            <a class="social" href="https://www.instagram.com/slfhykar_?igsh=ZTFsM2lqdWNjazBo" target="_blank" rel="noopener">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a class="social" href="https://www.tiktok.com/@slfhykar_?_t=ZS-90n7uZaiKVs&_r=1" target="_blank" rel="noopener">
+              <i class="bx bxl-tiktok"></i>
+            </a>
+            <a class="social" href="https://www.youtube.com/@devnotmad" target="_blank" rel="noopener">
+              <i class="bx bxl-youtube"></i>
+            </a>
+            <a class="social" href="https://www.facebook.com/share/177Z5N7x9m/" target="_blank" rel="noopener">
+              <i class="bx bxl-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="photo-area">
+          <!-- ganti profile.jpg dengan foto profilmu -->
+          <img src="foto.fikar.jpg" alt="Foto Profil" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about fade-in">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">Hai, ini tentang aku Seorang Manusia, Makhluk, Pria. Aku suka menulis karena sedikit meredahkan riuh pikiranku, Mengabadikan momen lewat sebuah jepretan agar waktu tak benar-benar pergi, dan Aku menyukai hal-hal baru, karena di sanalah aku menemukan sisi lain dari diriku yang belum pernah kukenal.</p>
+      </div>
+    </section>
+
+    <!-- WORK RESULT (UPLOAD + GALLERY) -->
+    <section id="work" class="section work fade-in">
+      <div class="container">
+        <h2 class="section-title">Work Result</h2>
+
+        <!-- Upload area -->
+        <div class="upload-wrap">
+          <label for="fileInput" class="btn">Upload hasil kerja</label>
+          <input id="fileInput" type="file" accept="image/*,video/*" multiple style="display:none" />
+          <div id="dropZone" class="drop-zone">atau tarik & lepas file ke sini</div>
+          <p class="note">Gambar/video akan dipreview dan tersimpan di browser (localStorage). Hindari file sangat besar.</p>
+        </div>
+
+        <!-- Gallery -->
+        <div id="gallery" class="gallery-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills fade-in">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skill-item">
+          <div class="skill-head"><span>HTML / CSS / JavaScript</span><span>10%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="10%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head"><span>WPS Office</span><span>70%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="70%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head"><span>Canva</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="85%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head"><span>CapCut</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="85%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head"><span>CorelDRAW</span><span>50%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="50%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact fade-in">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="lead">Ingin berkolaborasi? Hubungi melalui media sosial di atas atau email: <a class="link" href="mailto:fhykar17@gmail.com">fhykar17@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 SULFIKAR</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
